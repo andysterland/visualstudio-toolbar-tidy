@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SimpleUIExtension
+namespace ToolbarTidy
 {
     public class SimpleUI
     {

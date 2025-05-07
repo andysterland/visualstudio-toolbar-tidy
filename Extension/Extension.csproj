@@ -13,8 +13,8 @@
     <ProjectGuid>{6685E7D1-AF2D-4392-A4F8-1FA09E474A09}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SimpleUIExtension</RootNamespace>
-    <AssemblyName>SimpleUIExtension</AssemblyName>
+    <RootNamespace>ToolbarTidy</RootNamespace>
+    <AssemblyName>ToolbarTidy</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <UseCodebase>true</UseCodebase>
@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="ApplySimpleSettingsCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimplifyExtensionPackage.cs" />
+    <Compile Include="ToolbarTidyExtensionPackage.cs" />
     <Compile Include="SimpleUI.cs" />
   </ItemGroup>
   <ItemGroup>

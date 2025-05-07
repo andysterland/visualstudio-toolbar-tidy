@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using Task = System.Threading.Tasks.Task;
 
-namespace SimpleUIExtension
+namespace ToolbarTidy
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
@@ -29,9 +29,9 @@ namespace SimpleUIExtension
     /// </para>
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [Guid(SimplifyExtensionPackage.PackageGuidString)]
+    [Guid(ToolbarTidyExtensionPackage.PackageGuidString)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    public sealed class SimplifyExtensionPackage : AsyncPackage
+    public sealed class ToolbarTidyExtensionPackage : AsyncPackage
     {
         static string GetAssemblyLocalPathFrom(Type type)
         {
@@ -61,7 +61,7 @@ namespace SimpleUIExtension
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
-            var installationPath = Path.GetDirectoryName(GetAssemblyLocalPathFrom(typeof(SimplifyExtensionPackage)));
+            var installationPath = Path.GetDirectoryName(GetAssemblyLocalPathFrom(typeof(ToolbarTidyExtensionPackage)));
             var dte = await ServiceProvider.GetGlobalServiceAsync(typeof(DTE)) as DTE;
             this.SimpleUI = new SimpleUI(this, dte, installationPath);
 

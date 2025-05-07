@@ -12,7 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Task = System.Threading.Tasks.Task;
 
-namespace SimpleUIExtension
+namespace ToolbarTidy
 {
     /// <summary>
     /// Command handler
@@ -33,7 +33,7 @@ namespace SimpleUIExtension
         /// Initializes the singleton instance of the command.
         /// </summary>
         /// <param name="package">Owner package, not null.</param>
-        public static async Task InitializeAsync(SimplifyExtensionPackage package)
+        public static async Task InitializeAsync(ToolbarTidyExtensionPackage package)
         {
             // Switch to the main thread - the call to AddCommand in ApplySimpleSettingsCommand's constructor requires
             // the UI thread.
@@ -48,7 +48,7 @@ namespace SimpleUIExtension
         /// <summary>
         /// VS Package that provides this command, not null.
         /// </summary>
-        private readonly SimplifyExtensionPackage package;
+        private readonly ToolbarTidyExtensionPackage package;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApplySimpleSettingsCommand"/> class.
@@ -56,7 +56,7 @@ namespace SimpleUIExtension
         /// </summary>
         /// <param name="package">Owner package, not null.</param>
         /// <param name="commandService">Command service to add command to, not null.</param>
-        private ApplySimpleSettingsCommand(SimplifyExtensionPackage package, OleMenuCommandService commandService)
+        private ApplySimpleSettingsCommand(ToolbarTidyExtensionPackage package, OleMenuCommandService commandService)
         {
             this.package = package ?? throw new ArgumentNullException(nameof(package));
             commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
