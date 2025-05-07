@@ -24,7 +24,7 @@ namespace ToolbarTidy
         readonly string resetSettingsArgs = "/reset";
         readonly string exportSettingsArgs = "/export:\"{0}\"";
         readonly string previousSettingsFile = "Resources\\previous.settings";
-        readonly string settingsFileUri = "https://aka.ms/AAw4md1";
+        readonly string settingsFileUri = "https://aka.ms/AAw4md1"; 
         readonly string simplifiedSettingsFromWebFilePath = "Resources\\simplified_web.settings";
 
         private readonly AsyncPackage package;

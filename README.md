@@ -10,3 +10,7 @@ Toolbar Tidy is a Visual Studio extension that provides a minimalistic user inte
 You can apply the simplified profile from the `Tools -> Tidy Toolbar` menu. Once applied using the menu option again will revert back to your previous profile.
 
 Note: It doesn't hurt to backup your current profile from `Tools -> Import and Export Settings` before applying the simplified profile.
+
+## Updating the simplified settings
+
+The `Data\simplified.settings` file is downloaded by clients, overwritting the version that shipped with the VSIX they installed. Be wary when updating it. be 
