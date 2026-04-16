@@ -5,7 +5,7 @@
 
 This is a test project, please only use if explicitly told to do so.
 
-Toolbar Tidy is a Visual Studio extension that provides a minimalistic user interface for Visual Studio. 
+Toolbar Tidy is a Visual Studio extension that provides a minimalistic user interface for Visual Studio altering the window layout and toolbars. 
 
 You can apply the simplified profile from the `Tools -> Tidy Toolbar` menu. Once applied using the menu option again will revert back to your previous profile.
 
